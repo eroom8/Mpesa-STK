@@ -6,7 +6,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <div className="bg-green-400" >
     <App />  
-    </div>
-       
+    </div>   
   </React.StrictMode>,
 )

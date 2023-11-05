@@ -1,18 +1,27 @@
-const express = require("express");
-
+const express = require('express');
+const cors = require('cors');
 const app = express();
-const cors = require("cors");
+const stkRouter = require('./routes/stk'); 
+require('dotenv').config();
+const port = process.env.LOCAL_PORT;
 
-const TokenRoute = require("./routes/token");
 
-app.listen(5000, () => {
-  console.log("server run nicely");
-});
+// Configure CORS
+const corsOptions = {
+  origin: "*", 
+  methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
+  preflightContinue: false,
+  optionsSuccessStatus: 204,
+};
 
+app.use(cors(corsOptions));
+
+// Body parsing middleware
 app.use(express.json());
-app.use(cors());
-app.get("/", (req, res) => {
-  res.send("Mpesa programming in progress,Time to get paid");
-});
+app.use(express.urlencoded({ extended: true }));
 
-app.use("/token", TokenRoute);
+// Use the STK router for STK-related routes
+app.use(stkRouter);
+app.listen(port, () => {
+  console.log(`Server running at ${port}`);
+});
