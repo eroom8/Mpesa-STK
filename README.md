@@ -1,4 +1,6 @@
 # Mpesa-STK with nodejs, react vite and tailwindcss
-![Screenshot (323)](https://github.com/eroom8/Mpesa-STK/assets/89536199/8e64d4ef-561d-4ebd-a114-d900ae57f167)
-![Screenshot (324)](https://github.com/eroom8/Mpesa-STK/assets/89536199/481fd18d-7680-4053-b25e-190772e49aa9)
+![Screenshot (488)](https://github.com/user-attachments/assets/efc14319-fbbd-4520-b91f-c489c2506163)
+
+![Screenshot (491)](https://github.com/user-attachments/assets/c84edcdd-1e9f-4626-a0b4-99638c32334a)
+
 ![photo_2023-11-05_19-03-51](https://github.com/eroom8/Mpesa-STK/assets/89536199/428a2e23-9f06-4f5c-9add-7b69b4deb919)
